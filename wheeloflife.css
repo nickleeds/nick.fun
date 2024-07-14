@@ -1,0 +1,73 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Wheel of life styling */
+.wheel {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.category {
+    flex: 1;
+    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.category.work {
+    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+}
+
+.category.relationships {
+    background-color: rgba(255, 255, 0, 0.3); /* Yellow */
+}
+
+.category.health {
+    background-color: rgba(255, 0, 0, 0.3); /* Red */
+}
+
+.category h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.category ul li {
+    margin-bottom: 5px;
+}
+
+/* Joy section */
+.joy {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.joy h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
