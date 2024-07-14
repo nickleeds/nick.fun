@@ -1,73 +1,56 @@
-/* General styling */
+/* Styles for Wheel of Life */
+
+/* Basic styling, adjust as needed */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
 }
 
 header, footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px 0;
 }
 
 main {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
-/* Wheel of life styling */
 .wheel {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 40px;
+    gap: 20px;
 }
 
 .category {
-    flex: 1;
-    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 250px;
 }
 
-.category.work {
-    background-color: rgba(0, 0, 255, 0.3); /* Blue */
+.ratings {
+    margin-top: 10px;
 }
 
-.category.relationships {
-    background-color: rgba(255, 255, 0, 0.3); /* Yellow */
-}
-
-.category.health {
-    background-color: rgba(255, 0, 0, 0.3); /* Red */
-}
-
-.category h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.category ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.category ul li {
+.ratings label {
+    display: block;
     margin-bottom: 5px;
 }
 
-/* Joy section */
-.joy {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+.ratings input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-.joy h2 {
-    color: #333;
-    margin-bottom: 10px;
+footer {
+    margin-top: 20px;
 }
