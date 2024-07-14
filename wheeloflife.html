@@ -15,12 +15,26 @@
         <section class="wheel">
             <div class="category work">
                 <h2>Work</h2>
-                <div class="ratings">
-                    <label for="workRating">Rate from 0 to 10:</label>
-                    <input type="number" id="workRating" min="0" max="10" value="5">
+                <div class="rating-container">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="workSlider">
+                    <output class="rating">5</output>
                 </div>
             </div>
-            <!-- Repeat for other categories: Relationships, Health, etc. -->
+            <div class="category relationships">
+                <h2>Relationships</h2>
+                <div class="rating-container">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="relationshipsSlider">
+                    <output class="rating">5</output>
+                </div>
+            </div>
+            <div class="category health">
+                <h2>Health</h2>
+                <div class="rating-container">
+                    <input type="range" min="0" max="10" value="5" class="slider" id="healthSlider">
+                    <output class="rating">5</output>
+                </div>
+            </div>
+            <!-- Add more categories as needed -->
         </section>
     </main>
 
