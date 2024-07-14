@@ -1,6 +1,5 @@
 /* Styles for Wheel of Life */
 
-/* Basic styling, adjust as needed */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -18,12 +17,13 @@ header, footer {
 
 main {
     padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .wheel {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
@@ -32,25 +32,48 @@ main {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.ratings {
-    margin-top: 10px;
+.rating-container {
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
 
-.ratings label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-.ratings input {
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(#ff7f00 0% 50%, #f0f0f0 0% 50%);
+    outline: none;
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
 }
 
-footer {
-    margin-top: 20px;
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ff7f00;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.rating {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: bold;
 }
