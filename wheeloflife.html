@@ -1,47 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wheel of Life</title>
-    <link rel="stylesheet" href="wheeloflife.css">
-</head>
-<body>
-    <header>
-        <h1>Wheel of Life</h1>
-    </header>
-
-    <main>
-        <section class="wheel">
-            <div class="category work">
-                <h2>Work</h2>
-                <div class="rating-container">
-                    <input type="range" min="0" max="10" value="5" class="slider" id="workSlider">
-                    <output class="rating">5</output>
-                </div>
+<div class="wheel">
+    <div class="category work">
+        <h2>Work</h2>
+        <div class="sub-categories">
+            <div class="sub-category">
+                <h3>Body</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
             </div>
-            <div class="category relationships">
-                <h2>Relationships</h2>
-                <div class="rating-container">
-                    <input type="range" min="0" max="10" value="5" class="slider" id="relationshipsSlider">
-                    <output class="rating">5</output>
-                </div>
+            <div class="sub-category">
+                <h3>Mind</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
             </div>
-            <div class="category health">
-                <h2>Health</h2>
-                <div class="rating-container">
-                    <input type="range" min="0" max="10" value="5" class="slider" id="healthSlider">
-                    <output class="rating">5</output>
-                </div>
+            <div class="sub-category">
+                <h3>Soul</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
             </div>
-            <!-- Add more categories as needed -->
-        </section>
-    </main>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2024 Nick</p>
-    </footer>
+    <div class="category relationships">
+        <h2>Relationships</h2>
+        <div class="sub-categories">
+            <div class="sub-category">
+                <h3>Romance</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+            <div class="sub-category">
+                <h3>Family</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+            <div class="sub-category">
+                <h3>Friends</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+        </div>
+    </div>
 
-    <script src="wheeloflife.js"></script>
-</body>
-</html>
+    <div class="category health">
+        <h2>Health</h2>
+        <div class="sub-categories">
+            <div class="sub-category">
+                <h3>Mission</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+            <div class="sub-category">
+                <h3>Money</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+            <div class="sub-category">
+                <h3>Growth</h3>
+                <input type="range" min="0" max="10" value="5" class="slider">
+            </div>
+        </div>
+    </div>
+
+    <div class="category joy">
+        <h2>Joy</h2>
+        <input type="range" min="0" max="10" value="5" class="slider">
+    </div>
+</div>
